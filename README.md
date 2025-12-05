@@ -13,7 +13,7 @@ In addition, this repository hosts copies of the [Raw Gadget](/raw_gadget) and t
 
 ## Learning materials
 
-See the rest of this README for the general information and the set up instructions for Raw Gadget.
+See the rest of this README for the general information and the setup instructions for Raw Gadget.
 
 See the [Fuzzing USB with Raw Gadget](https://docs.google.com/presentation/d/1sArf2cN5tAOaovlaL3KBPNDjYOk8P6tRrzfkclsbO_c/edit?usp=sharing) talk [[video](https://www.youtube.com/watch?v=AT3PQjKxa_c)] for details about the Linux Host and Gadget USB subsystems and Raw Gadget.
 
@@ -25,15 +25,15 @@ See the [Attacking USB with Raw Gadget](/workshop) workshop for a few hands-on e
 The Linux kernel provides a number of interfaces for the USB Gadget subsystem that allow emulating USB devices.
 Most notably there is the [Composite Framework](https://docs.kernel.org/usb/gadget_configfs.html)
 (including the [FunctionFS-based composite function](https://elixir.bootlin.com/linux/latest/source/drivers/usb/gadget/function/f_fs.c))
-and the [legacy gadget drivers modules](https://elixir.bootlin.com/linux/latest/source/drivers/usb/gadget/legacy)
+and the [legacy gadget driver modules](https://elixir.bootlin.com/linux/latest/source/drivers/usb/gadget/legacy)
 (including [GadgetFS](https://elixir.bootlin.com/linux/latest/source/drivers/usb/gadget/legacy/inode.c)).
 
 Most of the Gadget subsystem interfaces (with the exception of GadgetFS and the FunctionFS-based composite function) only allow emulating USB devices of specific classes.
-Compared to them, Raw Gadget allows emulating USB devices of arbitary classes.
+Compared to them, Raw Gadget allows emulating USB devices of arbitrary classes.
 
 GadgetFS and the FunctionFS-based composite function do allow emulating USB devices of arbitrary classes.
 However, these interfaces allow only a limited control over the responses to some USB requests, as they perform sanity checks on the responses provided from userspace.
-This limits their ability of emulating improper USB devices, which might be useful for fuzzing or exploitation.
+This limits their ability to emulate improper USB devices, which might be useful for fuzzing or exploitation.
 Compared to them, Raw Gadget has minimal checks on the provided responses.
 
 Raw Gadget is thus the perfect choice for fuzzing and exploiting USB hosts or for software proxying of USB devices.
@@ -216,7 +216,7 @@ Raw Gadget powers the [syzkaller](https://github.com/google/syzkaller)'s ability
 
 See [Running syzkaller USB reproducers](docs/syzkaller_reproducers.md) for instructions on running syzkaller USB reproducers on a Linux-based board plugged into a physical USB host.
 
-You also set up syzkaller in the [isolated mode](https://github.com/google/syzkaller/blob/master/docs/linux/setup_linux-host_isolated.md) to fuzz physical USB hosts with the help of Raw Gadget.
+You can also set up syzkaller in the [isolated mode](https://github.com/google/syzkaller/blob/master/docs/linux/setup_linux-host_isolated.md) to fuzz physical USB hosts with the help of Raw Gadget.
 Instructions for this are not provided.
 
 
@@ -343,7 +343,7 @@ Proxies:
 Emulators:
 
 * [msawahara/me56ps2-emulator](https://github.com/msawahara/me56ps2-emulator) — emulator for ME56PS2 (PlayStation 2–compatible modem) [[article](https://qiita.com/msawahara/items/f109b75919ddcf0db05a)];
-* [Berghopper/360-raw-gadget](https://github.com/Berghopper/360-raw-gadget) and [Berghopper/360-w-raw-gadget](https://github.com/Berghopper/360-w-raw-gadget/) — emulators for Xbox 360 contoller.
+* [Berghopper/360-raw-gadget](https://github.com/Berghopper/360-raw-gadget) and [Berghopper/360-w-raw-gadget](https://github.com/Berghopper/360-w-raw-gadget/) — emulators for Xbox 360 controller.
 
 Other:
 
