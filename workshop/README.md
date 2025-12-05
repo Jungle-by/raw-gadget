@@ -4,9 +4,9 @@ Attacking USB with Raw Gadget
 This is a workshop that serves as an introduction to the USB hacking topic in general and to [Raw Gadget](https://github.com/xairy/raw-gadget) specifically.
 
 The workshop gives an overview of the USB protocol, the Linux USB Gadget subsystem, and the Raw Gadget interface.
-The offered hands-on exercises include capturing and analyzing the communication of USB devices, emulating USB devices via Raw Gadget, and proxying USB devices via Raw Gadget and libusb.
+The offered hands-on exercises include capturing and analyzing communication of USB devices, emulating USB devices via Raw Gadget, and proxying USB devices via Raw Gadget and libusb.
 
-This workshop was delivered at BalcCon25k; see the accompanying [slides](https://docs.google.com/presentation/d/11LsMKxJg_YBSIf032cU29EkybfMhT9Gi-0jW3fV5T04/edit?usp=sharing).
+This workshop was delivered at BalcCon2k25; see the accompanying [slides](https://docs.google.com/presentation/d/11LsMKxJg_YBSIf032cU29EkybfMhT9Gi-0jW3fV5T04/edit?usp=sharing).
 
 
 ## Required hardware
