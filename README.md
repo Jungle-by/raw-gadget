@@ -330,7 +330,8 @@ See [Resets and configuration/altsetting changes](#resets-and-configurationaltse
 Fuzzing-related:
 
 * [google/syzkaller](https://github.com/google/syzkaller) — kernel fuzzer, uses Raw Gadget for [fuzzing Linux kernel USB drivers](https://github.com/google/syzkaller/blob/master/docs/linux/external_fuzzing_usb.md);
-* [ReUSB: Replay-Guided USB Driver Fuzzing](https://www.usenix.org/conference/usenixsecurity23/presentation/jang) — research work on extending syzkaller's USB fuzzing capability by collecting corpus seeds from real devices.
+* [ReUSB: Replay-Guided USB Driver Fuzzing](https://www.usenix.org/conference/usenixsecurity23/presentation/jang) — research work on extending syzkaller's USB fuzzing capability by collecting corpus seeds from real devices;
+* [Power Management and USB Fuzzing: A Modular Approach to Kernel Coverage During Suspend Crashes](https://lpc.events/event/19/contributions/2087/) ([video](https://www.youtube.com/watch?v=TNMcqQsqgr4)) — research work that relied on Raw Gadget (among other tools) for fuzzing the Power Management Linux kernel subsystem.
 
 Proxies:
 
